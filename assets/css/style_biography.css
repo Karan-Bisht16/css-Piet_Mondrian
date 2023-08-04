@@ -1,0 +1,63 @@
+.flex_centre{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 40px;
+    width: 80%;
+    margin: 0 auto 150px auto;
+}
+div.early_life{
+    display: grid;
+    grid-template-rows: 30px 150px;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-top: 0px;
+}
+.early_life > h3{
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    grid-area: 1 / 1 / 2 / 3;
+}
+.later_years, .legacy{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+.maturity, .artworks{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+.text{
+    text-align: justify;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 25px auto;
+}
+.text > p{
+    color: #FFFAF4;
+}
+.text > p > span{
+    color: #FF6666;
+    display: block;
+    border: none;
+    border-bottom: 1px #FFFAF4 solid;
+    font-size: 18px;
+}
+.text > img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+
+/*
+    media query 1300px width
+    add 'alt text' to all images
+    check paragraphs
+    check for copyright
+    think about how to reference
+*/

@@ -1,0 +1,61 @@
+.flex_centre{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 40px;
+    width: 80%;
+    margin: 0 auto 150px auto;
+}
+.main{
+    margin: 0px auto;
+    background-color: #2B2730;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap:30px;
+}
+.text > h3{
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+}
+.text > p > span{
+    color: #FF6666;
+    margin-bottom: 10px;
+}
+.text > p{
+    color: #FFFAF4;
+}
+.text{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+}
+.main > img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+.button_biography{
+    text-align: center;
+}
+.button_biography > a{
+    text-decoration: none;
+    color: #FFFAF4; 
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px 20px;
+    background-color: #FF6666;
+}
+.button_biography > a:hover{
+    background-color: #FF666680;
+    padding: 9.5px 19.5px;
+}
+
+
+/*
+    media query 1300px width
+    add 'alt text' to all images
+    check paragraphs
+    check for copyright
+    think about how to reference
+*/
