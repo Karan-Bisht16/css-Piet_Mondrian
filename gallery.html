@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piet Mondrian - Gallery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/artwork.css">
+    
+    <style>
+        body{
+            background-color: #2B2730;
+        }
+        .flex_centre{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            gap: 40px;
+            width: 80%;
+            height: 500px;
+            align-items: center;
+            position: relative;
+            top: -100px;
+            margin: 0 auto 150px auto;
+        }
+        .flex_centre > button{
+            height: 50px;
+            width: 50px;
+            font-size: 35px;
+            color: #F0F1EC;
+            background-color: #232629;
+            border-radius: 50%;
+        }        
+        .carousel-inner{
+            width: 450px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="heading">
+        <img src="./assets/images/0.jpg" alt="">
+        <h2>Piet Mondrian</h2>
+        <p>- BY KARAN BISHT</p>
+        <div class="navigation">
+            <a href="./index.html" style="margin-left: 15px;">Home</a>
+            <a href="./biography.html">Biography</a>
+            <a href="./gallery.html" style="background-color: #FF6666;">Gallery</a>
+            <a href="./collections.html">Collections</a>
+            <a href="./slideshow.html">SlideShow</a>
+            <a href="./about_me.html">About me</a>
+        </div>
+    </div>
+     
+    <div class="flex_centre">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="first_artwork">
+                        <div class="red first_item1"></div>
+                        <div class="white first_item2"></div>
+                        <div class="white first_item3"></div>
+                        <div class="white first_item4"></div>
+                        <div class="blue first_item5"></div>
+                        <div class="white first_item6"></div>
+                        <div class="yellow first_item7"></div>
+                        <div class="yellow first_item8"></div>
+                        <div class="gray first_item9"></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="second_artwork">
+                        <div class="white second_item1"></div>
+                        <div class="white second_item2"></div>
+                        <div class="yellow second_item3"></div>
+                        <div class="white second_item4"></div>
+                        <div class="white second_item5"></div>
+                        <div class="red second_item6"></div>
+                        <div class="yellow second_item7"></div>
+                        <div class="white second_item8"></div>
+                        <div class="white second_item9"></div>
+                        <div class="white second_item10"></div>
+                        <div class="gray second_item11"></div>
+                        <div class="white second_item12"></div>
+                        <div class="white second_item13"></div>
+                        <div class="yellow second_item14"></div>
+                        <div class="white second_item15"></div>
+                        <div class="blue second_item16"></div>
+                        <div class="red second_item17"></div>
+                        <div class="white second_item18"></div>
+                        <div class="gray second_item19"></div>
+                        <div class="white second_item20"></div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="third_artwork">
+                        <div class="dark_yellow third_item1"></div>
+                        <div class="dark_yellow third_item2"></div>
+                        <div class="dark_yellow third_item3"></div>
+                        <div class="silver third_item4"></div>
+                        <div class="dark_yellow third_item5"></div>
+                        <div class="silver third_item6"></div>
+                        <div class="silver third_item7"></div>
+                        <div class="silver third_item8"></div>
+                        <div class="dark_yellow third_item9"></div>
+                        <div class="silver third_item10"></div>
+                        <div class="silver third_item11"></div>
+                        <div class="dark_yellow third_item12"></div>
+                        <div class="dark_yellow third_item13"></div>
+                        <div class="yellowish_gray third_item14"></div>
+                        <div class="dark_yellow third_item15"></div>
+                        <div class="silver third_item16"></div>
+                        <div class="silver third_item17"></div>
+                        <div class="yellowish_gray third_item18"></div>
+                        <div class="silver third_item19"></div>
+                        <div class="silver third_item20"></div>
+                        <div class="silver third_item21"></div>
+                        <div class="silver third_item22"></div>
+                        <div class="dark_yellow third_item23"></div>
+                        <div class="silver third_item24"></div>
+                        <div class="silver third_item25"></div>
+                        <div class="silver third_item26"></div>
+                        <div class="yellowish_gray third_item27"></div>
+                        <div class="dark_yellow third_item28"></div>
+                        <div class="dark_yellow third_item29"></div>
+                        <div class="dark_yellow third_item30"></div>
+                        <div class="yellowish_gray third_item31"></div>
+                        <div class="dark_yellow third_item32"></div>
+                        <div class="silver third_item33"></div>
+                        <div class="dark_yellow third_item34"></div>
+                        <div class="dark_yellow third_item35"></div>
+                        <div class="silver third_item36"></div>
+                        <div class="silver third_item37"></div>
+                        <div class="silver third_item38"></div>
+                        <div class="dark_yellow third_item39"></div>
+                        <div class="silver third_item40"></div>
+                        <div class="silver third_item41"></div>
+                        <div class="silver third_item42"></div>
+                        <div class="silver third_item43"></div>
+                        <div class="dark_yellow third_item44"></div>
+                        <div class="silver third_item45"></div>
+                        <div class="silver third_item46"></div>
+                        <div class="yellowish_gray third_item47"></div>
+                        <div class="silver third_item48"></div>
+                        <div class="silver third_item49"></div>
+                        <div class="silver third_item50"></div>
+                        <div class="silver third_item51"></div>
+                        <div class="dark_yellow third_item52"></div>
+                        <div class="dark_yellow third_item53"></div>
+                        <div class="silver third_item54"></div>
+                        <div class="silver third_item55"></div>
+                        <div class="silver third_item56"></div>
+                        <div class="dark_yellow third_item57"></div>
+                        <div class="dark_yellow third_item58"></div>
+                        <div class="silver third_item59"></div>
+                        <div class="silver third_item60"></div>
+                        <div class="silver third_item61"></div>
+                        <div class="silver third_item62"></div>
+                        <div class="silver third_item63"></div>
+                        <div class="silver third_item64"></div>
+                        <div class="silver third_item65"></div>
+                        <div class="dark_yellow third_item66"></div>
+                        <div class="silver third_item67"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="fourth_artwork">
+                        <div class="white"></div>
+                        <div class="yellow"></div>
+                        <div class="blue"></div>
+                        <div class="red"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="fifth_artwork">
+                        <div class="red"></div>
+                        <div class="yellow"></div>
+                        <div class="blue"></div>
+                        <div class="white"></div>
+                    </div>
+                </div>         
+                <div class="carousel-item">
+                    <div class="tenth_artwork">
+                        <div class="yellow tenth_item1"></div>
+                        <div class="white tenth_item2"></div>
+                        <div class="gray tenth_item3"></div>
+                        <div class="blue tenth_item4"></div>
+                        <div class="white tenth_item5"></div>
+                        <div class="white tenth_item6"></div>
+                        <div class="red tenth_item7"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3></h3>
+        <div class="contact">
+            <h2>Piet Mondrian</h2>
+            <p>- BY KARAN BISHT</p>
+            <div class="links">
+                <a href="https://instagram.com/karan_b1603" target="_blank">
+                  <img src="./assets/images/instagram.png" width="25px"></a>
+                <a href="https://twitter.com/karan_b1603" target="_blank">
+                  <img src="./assets/images/twitter.png" width="25px"></a>
+                <a href="https://github.com/Karan-Bisht16" target="_blank">
+                  <img src="./assets/images/github.png" width="25px"></a>
+                <a href="https://www.linkedin.com/in/karan-bisht-583918254/" target="_blank">
+                  <img src="./assets/images/linkedin.png" width="25px"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./.misc/hello.js"></script>
+
+</body>
+</html>
+<!--
+    1.  Composition with Oval in Color Planes II, 1914
+    2.  Composition in Color A, 1917
+    3.  Composition with Gray and Light Brown, 1918
+    4.  Composition: Light Color Planes with Grey Contours, 1919
+    5.  Composition with Grid VII, 1919
+    6.  Composition with Grid IX, 1919
+    7.  Composition with Large Red Plane, Yellow, Black, Gray and Blue, 1921
+    8.  Tableau I, 1921
+    9.  Tableau 3 with Orange -Red, Yellow, Black, Blue and Gray, 1921
+    10. Composition with Red, Yellow and Blue, 1922
+    11. Composition 2, 1922
+    12. Composition A, 1923
+    13. Lozenge Composition with Red, Gray, Blue, Yellow, and Black, 1925
+    14. Lozenge Composition with Red, Black,Blue and Yellow, 1925
+    15. Composition No. III, with Red, Blue, Yellow, and Black, 1929
+    16. Composition with yellow patch, 1930
+    Composition with Red, Blue and Yellow, 1930, Wikipedia article
+    Composition N. 1 with Red and Blue, 1931
+    Composition C (No.III) with Red, Yellow and Blue, 1935
+    Vertical Composition with Blue and White, 1936
+    Composition III with Blue, Yellow and White, 1936
+    Composition with Blue, 1937
+    PICTURE NO. III, 1938
+    Composition No.10, 1942
+    Composition No. III Blanc-Jaune, 1942
+    Composition with Red, Yellow and Blue, 1942
+    New York City I, 1942
+    Broadway Boogie Woogie, 1943, Wikipedia article
+    Place de la Concorde, 1943
+    Trafalgar Square, 1943
+    Victory Boogie Woogie, 1944, Wikipedia article
+    Composition 2, ?
+    Tableau No. IV - Lozenge Composition, ?
+    Composition N. 11 London with Blue, Red and Yellow, ?
+    Head, ?
+    Lozenge Composition 3 Lines Blue Gray Yellow, ?
+-->
