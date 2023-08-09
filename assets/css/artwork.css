@@ -83,8 +83,8 @@
 */
 .artwork_7{
   display: grid;
-  grid-template-rows: 51.4px 150px 192.9px 48px 53.6px 32.1px 21.4px;
-  grid-template-columns: 77.1px 77.1px 77.1px 120px 90px 90px;
+  grid-template-rows: 2.4fr 7.0fr 9.0fr 2.2fr 2.5fr 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1.6fr 1.2fr 1.2fr 0.235fr;
   gap: 8.6px;
   width: 600px;
   height: 600px;
@@ -112,12 +112,60 @@
 .second_item19{grid-area: 6 / 4 / 7 / 5;}
 .second_item20{grid-area: 7 / 4 / 8 / 7;}
 /*
+8.  8. Tableau I, 1921
+*/
+.artwork_8{
+  display: grid;
+  grid-template-rows: 1.8fr 6.24fr 3.12fr 1fr 3.12fr 3.12fr 0.09fr;
+  grid-template-columns: 2.5fr 6.1fr 18.3fr 4.6fr 1fr; 
+  gap: 8.6px;
+  width: 370.7px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: black;
+}
+.eighth_item1{grid-area: 1 / 1 / 2 / 3;}
+.eighth_item2{grid-area: 1 / 3 / 3 / 6;}
+.eighth_item3{grid-area: 2 / 1 / 4 / 3;}
+.eighth_item4{grid-area: 3 / 3 / 4 / 5;}
+.eighth_item5{grid-area: 3 / 5 / 6 / 6;}
+.eighth_item6{grid-area: 4 / 1 / 5 / 2;}
+.eighth_item7{grid-area: 4 / 2 / 8 / 3;}
+.eighth_item8{grid-area: 4 / 3 / 6 / 5;}
+.eighth_item9{grid-area: 5 / 1 / 8 / 2;}
+.eighth_item10{grid-area: 6 / 3 / 7 / 4;}
+.eighth_item11{grid-area: 6 / 4 / 7 / 6;}                      
+/*
+9.  Tableau 3 with Orange -Red, Yellow, Black, Blue and Gray, 1921
+*/
+.artwork_9{
+  display: grid;
+  grid-template-rows: 1.5fr 8.375fr 6.125fr 1.75fr 1fr;
+  grid-template-columns: 1fr 4.5fr 3fr 1.5fr;
+  gap: 10px;
+  width: 476.25px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: black;
+}
+.nineth_artwork1{grid-area: 1 / 1 / 2 / 3;}
+.nineth_artwork2{grid-area: 1 / 3 / 3 / 4;}
+.nineth_artwork3{grid-area: 1 / 4 / 3 / 5;}
+.nineth_artwork4{grid-area: 2 / 1 / 3 / 3;}
+.nineth_artwork5{grid-area: 3 / 1 / 5 / 2;}
+.nineth_artwork6{grid-area: 3 / 2 / 5 / 3;}
+.nineth_artwork7{grid-area: 3 / 3 / 4 / 4;}
+.nineth_artwork8{grid-area: 3 / 4 / 4 / 5;}
+.nineth_artwork9{grid-area: 5 / 1 / 6 / 3;}
+.nineth_artwork10{grid-area: 4 / 3 / 6 / 5;}
+
+/*
 10. Composition with Red, Yellow and Blue, 1922
 */ 
 .artwork_10 {
   display: grid;
-  grid-template-rows: 33.4px 400px 120.7px 20.1px; 
-  grid-template-columns: 115.7px 235.7px 197.1px 25.7px;
+  grid-template-rows: 1.7fr 20fr 6fr 1fr; 
+  grid-template-columns: 4.5fr 9.2fr 7.7fr 1fr;
   gap: 8.6px;
   width: 600px;
   height: 600px;
@@ -136,8 +184,8 @@
 */
 .artwork_15 {
   display: grid;
-  grid-template-rows: 342.9px 85.7px 128.6px 17.1px;
-  grid-template-columns: 257.1px 145.7px 128.6px 42.9px; 
+  grid-template-rows: 20fr 5fr 7.5fr 1fr;
+  grid-template-columns: 6fr 3.4fr 3fr 1fr; 
   gap: 8.6px;
   width: 600px;
   height: 600px;
