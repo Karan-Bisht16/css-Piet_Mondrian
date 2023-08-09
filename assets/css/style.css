@@ -1,11 +1,3 @@
-/*
-    media query 1300px width
-    add 'alt text' to all images
-    check paragraphs
-    check for copyright
-    think about how to reference
-*/
-
 *{
     margin: 0;
     background-color: #2B2730;
@@ -129,4 +121,13 @@ footer > h3{
 }
 .silver{
     background-color: #b7bacd;
+}
+.black{
+    background-color: black;
+}
+.orange{
+    background-color: #e8561c;
+}
+.cream{
+    background-color: #f5e9bf;
 }
