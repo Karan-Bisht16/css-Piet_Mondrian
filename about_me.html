@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/style_about_me.css">
+
+    <style>
+        *{
+            margin: 0;
+            background-color: #2B2730;
+        }
+        .peach{
+            background-color: #FF6666;
+            color: #FFFAF4;
+        }
+        header{
+            background-color: #FFEADD;
+            height: 20vh;
+            width: 100%;
+        }
+        .heading{
+            width: 70%;
+            height: 200px;
+            margin: 0 auto;
+            position: relative;
+            top: -15vh;
+        }
+        .heading > img{
+            width: 100%; 
+            height: inherit;
+            object-fit: cover;
+        }
+        .heading > h2 , .heading > p{
+            position: relative;
+            top: -200px;
+            margin-left: 15px;
+            background-color: transparent;
+        }
+        .heading > h2, .contact > h2{
+            color: #FFFAF4;
+            font-size: 60px;
+            font-family: 'Dancing Script', cursive;
+        }
+        .heading > p{
+            color: #FF6666;
+            font-size: 20px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        .navigation{
+            display: flex;
+            flex-flow: row wrap;
+            gap: 10px;
+            width: 100%;
+            height: 40px;
+            background-color: #2B273080;
+            position: absolute;
+            top:160px;
+            align-content: center;
+        }
+        .navigation > a{
+            text-decoration: none;
+            color: #FFFAF4; 
+            font-size: 17px;
+            font-family: 'Roboto Condensed', sans-serif;
+            padding: 4px 5px;
+            background-color: transparent;
+        }
+        .navigation > a:hover{
+            background-color: #FF6666;
+            padding: 3px 5px;
+        }
+        footer{
+            background-color: #2B2730;
+            height: 30vh;
+            width: 100%;
+        }
+        footer > h3{
+            width: 100%;
+            height: 5px;
+            background-color: #FF6666;
+        }
+        .contact{
+            position: relative;
+            left: 10%;
+            width: 350px;
+            margin-top: 25px;
+        }
+        .contact > p{
+            color: #FF6666;
+            font-size: 20px;
+            font-family: 'Roboto Condensed', sans-serif;
+            text-align: start;
+        }
+        .links{
+            display: flex;
+            flex-flow: row wrap;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="heading">
+        <img src="./assets/images/0.jpg" alt="">
+        <h2>Piet Mondrian</h2>
+        <p>- BY KARAN BISHT</p>
+        <div class="navigation">
+            <a href="./index.html" style="margin-left: 15px;">Home</a>
+            <a href="./biography.html">Biography</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./collections.html">Collections</a>
+            <a href="./slideshow.html">SlideShow</a>
+            <a href="./about_me.html" style="background-color: #FF6666;">About me</a>
+        </div>
+    </div>
+    <div class="flex_centre">
+        <div class="main">
+        
+        </div>
+
+    </div>
+
+    <footer>
+        <h3></h3>
+        <div class="contact">
+            <h2>Piet Mondrian</h2>
+            <p>- BY KARAN BISHT</p>
+            <div class="links">
+                <a href="https://instagram.com/karan_b1603" target="_blank">
+                  <img src="./assets/images/instagram.png" width="25px"></a>
+                <a href="https://twitter.com/karan_b1603" target="_blank">
+                  <img src="./assets/images/twitter.png" width="25px"></a>
+                <a href="https://github.com/Karan-Bisht16" target="_blank">
+                  <img src="./assets/images/github.png" width="25px"></a>
+                <a href="https://www.linkedin.com/in/karan-bisht-583918254/" target="_blank">
+                  <img src="./assets/images/linkedin.png" width="25px"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
