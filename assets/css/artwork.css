@@ -180,6 +180,28 @@
 .tenth_item6{grid-area: 3 / 1 / 4 / 2;}
 .tenth_item7{grid-area: 4 / 1 / 5 / 2;}  
 /*
+11. Composition 2, 1922
+*/
+.artwork_11{
+  display: grid;
+  grid-template-rows: 2.52fr 5.05fr 6.3fr 10.85fr 5.56fr 1fr;
+  grid-template-columns: 1fr 6fr 6fr 3fr;
+  gap: 8.6px;
+  width: 578.57px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: black;
+}
+.eleventh_item1{grid-area: 1 / 1 / 2 / 3;}
+.eleventh_item2{grid-area: 1 / 3 / 2 / 4;}
+.eleventh_item3{grid-area: 1 / 4 / 3 / 5;}
+.eleventh_item4{grid-area: 2 / 1 / 4 / 2;}
+.eleventh_item5{grid-area: 2 / 2 / 5 / 4;}
+.eleventh_item6{grid-area: 3 / 4 / 6 / 5;}
+.eleventh_item7{grid-area: 4 / 1 / 5 / 2;}
+.eleventh_item8{grid-area: 5 / 1 / 7 / 4;}
+.eleventh_item9{grid-area: 6 / 4 / 7 / 5;}
+/*
 15. Composition No. III, with Red, Blue, Yellow, and Black [Date: 1929]
 */
 .artwork_15 {
@@ -192,12 +214,12 @@
   margin: 0 auto;
   background-color: black;
 }
-.first_item1 {grid-area: 1 / 1 / 2 / 2;}
-.first_item2 {grid-area: 1 / 2 / 2 / 5;}
-.first_item3 {grid-area: 2 / 1 / 4 / 2;}
-.first_item4 {grid-area: 2 / 2 / 4 / 4;}
-.first_item5 {grid-area: 2 / 4 / 3 / 5;}
-.first_item6 {grid-area: 3 / 4 / 5 / 5;}
-.first_item7 {grid-area: 4 / 1 / 5 / 2;}
-.first_item8 {grid-area: 4 / 2 / 5 / 3;}
-.first_item9 {grid-area: 4 / 3 / 5 / 4;}
+.fifteenth_item1 {grid-area: 1 / 1 / 2 / 2;}
+.fifteenth_item2 {grid-area: 1 / 2 / 2 / 5;}
+.fifteenth_item3 {grid-area: 2 / 1 / 4 / 2;}
+.fifteenth_item4 {grid-area: 2 / 2 / 4 / 4;}
+.fifteenth_item5 {grid-area: 2 / 4 / 3 / 5;}
+.fifteenth_item6 {grid-area: 3 / 4 / 5 / 5;}
+.fifteenth_item7 {grid-area: 4 / 1 / 5 / 2;}
+.fifteenth_item8 {grid-area: 4 / 2 / 5 / 3;}
+.fifteenth_item9 {grid-area: 4 / 3 / 5 / 4;}
