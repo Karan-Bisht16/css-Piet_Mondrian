@@ -91,26 +91,26 @@
   margin: 0 auto;
   background-color: black;
 }
-.second_item1{grid-area: 1 / 1 / 2 / 3;}
-.second_item2{grid-area: 1 / 3 / 2 / 5;}
-.second_item3{grid-area: 1 / 5 / 2 / 7;}
-.second_item4{grid-area: 1 / 7 / 5 / 8;}
-.second_item5{grid-area: 2 / 1 / 3 / 2;}
-.second_item6{grid-area: 2 / 2 / 4 / 5;}
-.second_item7{grid-area: 2 / 5 / 3 / 7;}
-.second_item8{grid-area: 3 / 1 / 5 / 2;}
-.second_item9{grid-area: 3 / 5 / 4 / 6;}
-.second_item10{grid-area: 3 / 6 / 4 / 7;}
-.second_item11{grid-area: 4 / 2 / 6 / 4;}
-.second_item12{grid-area: 4 / 4 / 5 / 5;}
-.second_item13{grid-area: 4 / 5 / 5 / 7;}
-.second_item14{grid-area: 5 / 1 / 8 / 2;}
-.second_item15{grid-area: 5 / 4 / 6 / 5;}
-.second_item16{grid-area: 5 / 5 / 7 / 7;}
-.second_item17{grid-area: 5 / 7 / 8 / 8;}
-.second_item18{grid-area: 6 / 2 / 8 / 4;}
-.second_item19{grid-area: 6 / 4 / 7 / 5;}
-.second_item20{grid-area: 7 / 4 / 8 / 7;}
+.seventh_item1{grid-area: 1 / 1 / 2 / 3;}
+.seventh_item2{grid-area: 1 / 3 / 2 / 5;}
+.seventh_item3{grid-area: 1 / 5 / 2 / 7;}
+.seventh_item4{grid-area: 1 / 7 / 5 / 8;}
+.seventh_item5{grid-area: 2 / 1 / 3 / 2;}
+.seventh_item6{grid-area: 2 / 2 / 4 / 5;}
+.seventh_item7{grid-area: 2 / 5 / 3 / 7;}
+.seventh_item8{grid-area: 3 / 1 / 5 / 2;}
+.seventh_item9{grid-area: 3 / 5 / 4 / 6;}
+.seventh_item10{grid-area: 3 / 6 / 4 / 7;}
+.seventh_item11{grid-area: 4 / 2 / 6 / 4;}
+.seventh_item12{grid-area: 4 / 4 / 5 / 5;}
+.seventh_item13{grid-area: 4 / 5 / 5 / 7;}
+.seventh_item14{grid-area: 5 / 1 / 8 / 2;}
+.seventh_item15{grid-area: 5 / 4 / 6 / 5;}
+.seventh_item16{grid-area: 5 / 5 / 7 / 7;}
+.seventh_item17{grid-area: 5 / 7 / 8 / 8;}
+.seventh_item18{grid-area: 6 / 2 / 8 / 4;}
+.seventh_item19{grid-area: 6 / 4 / 7 / 5;}
+.seventh_item20{grid-area: 7 / 4 / 8 / 7;}
 /*
 8.  8. Tableau I, 1921
 */
@@ -201,6 +201,46 @@
 .eleventh_item7{grid-area: 4 / 1 / 5 / 2;}
 .eleventh_item8{grid-area: 5 / 1 / 7 / 4;}
 .eleventh_item9{grid-area: 6 / 4 / 7 / 5;}
+/*
+12. Composition A, 1923
+*/
+.artwork_12{
+  display: grid;
+  grid-template-columns: 1fr 2.94fr 4fr 5.62fr 5.62fr 0.94fr 0.75fr;
+  grid-template-rows: 1fr 2fr 1.5fr 4.86fr 4.3fr 4.3fr 1.5fr 1.5fr 1.25fr;
+  gap: 8.6px;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: black;
+}
+.twelveth_item1 {grid-area: 1 / 1 / 4 / 2;}
+.twelveth_item2 {grid-area: 1 / 2 / 2 / 4;}
+.twelveth_item3 {grid-area: 1 / 4 / 3 / 5;}
+.twelveth_item4 {grid-area: 1 / 5 / 3 / 6;}
+.twelveth_item5 {grid-area: 1 / 6 / 4 / 8;}
+.twelveth_item6 {grid-area: 2 / 2 / 4 / 3;}
+.twelveth_item7 {grid-area: 2 / 3 / 4 / 4;}
+.twelveth_item8 {grid-area: 3 / 4 / 4 / 5;}
+.twelveth_item9 {grid-area: 3 / 5 / 4 / 6;}
+.twelveth_item10 {grid-area: 4 / 1 / 6 / 2;}
+.twelveth_item11 {grid-area: 4 / 2 / 5 / 4;}
+.twelveth_item12 {grid-area: 4 / 4 / 5 / 5;}
+.twelveth_item13 {grid-area: 4 / 5 / 5 / 6;}
+.twelveth_item14 {grid-area: 4 / 6 / 7 / 7;}
+.twelveth_item15 {grid-area: 4 / 7 / 7 / 7;}
+.twelveth_item16 {grid-area: 5 / 2 / 6 / 4;}
+.twelveth_item17 {grid-area: 5 / 4 / 6 / 5;}
+.twelveth_item18 {grid-area: 5 / 5 / 7 / 6;}
+.twelveth_item19 {grid-area: 6 / 1 / 8 / 3;}
+.twelveth_item20 {grid-area: 6 / 3 / 9 / 4;}
+.twelveth_item21 {grid-area: 6 / 4 / 7 / 5;}
+.twelveth_item22 {grid-area: 7 / 4 / 9 / 5;}
+.twelveth_item23 {grid-area: 7 / 5 / 9 / 6;}
+.twelveth_item24 {grid-area: 7 / 6 / 10 / 8;}
+.twelveth_item25 {grid-area: 8 / 1 / 10 / 3;}
+.twelveth_item26 {grid-area: 9 / 3 / 10 / 5;}
+.twelveth_item27 {grid-area: 9 / 5 / 10 / 6;}
 /*
 15. Composition No. III, with Red, Blue, Yellow, and Black [Date: 1929]
 */
