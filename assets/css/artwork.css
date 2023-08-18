@@ -87,6 +87,7 @@
 .artwork_7{
   grid-template-rows: 2.4fr 7.0fr 9.0fr 2.2fr 2.5fr 1.5fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1.6fr 1.2fr 1.2fr 0.235fr;
+  gap: 12px;
 }
 .seventh_item1{grid-area: 1 / 1 / 2 / 3;}
 .seventh_item2{grid-area: 1 / 3 / 2 / 5;}
@@ -133,7 +134,7 @@
 .artwork_9{
   grid-template-rows: 1.5fr 8.375fr 6.125fr 1.75fr 1fr;
   grid-template-columns: 1fr 4.5fr 3fr 1.5fr;
-  gap: 10px;
+  gap: 12px;
   width: 476.25px;
 }
 .nineth_artwork1{grid-area: 1 / 1 / 2 / 3;}
@@ -151,8 +152,9 @@
 10. Composition with Red, Yellow and Blue, 1922
 */ 
 .artwork_10{
-  grid-template-rows: 1.7fr 20fr 6fr 1fr; 
+  grid-template-rows: 1fr 20fr 6fr 1fr; 
   grid-template-columns: 4.5fr 9.2fr 7.7fr 1fr;
+  gap: 12px;
 }
 .tenth_item1{grid-area: 1 / 1 / 3 / 2;}
 .tenth_item2{grid-area: 1 / 2 / 2 / 3;}
@@ -167,6 +169,7 @@
 .artwork_11{
   grid-template-rows: 2.52fr 5.05fr 6.3fr 10.85fr 5.56fr 1fr;
   grid-template-columns: 1fr 6fr 6fr 3fr;
+  gap: 12px;
   width: 578.57px;
 }
 .eleventh_item1{grid-area: 1 / 1 / 2 / 3;}
@@ -268,7 +271,7 @@
 14. Lozenge Composition with Red, Black,Blue and Yellow, 1925
 */
 .artwork_14{
-  grid-template-rows: 6fr 10.1fr 3.3fr 2fr;
+  grid-template-rows: 6fr 12fr 3.3fr 2fr;
   grid-template-columns: 5.3fr 9.35fr 3.29fr 3.08fr; 
   gap: 14px;
 }
@@ -297,3 +300,15 @@
 .fifteenth_item7{grid-area: 4 / 1 / 5 / 2;}
 .fifteenth_item8{grid-area: 4 / 2 / 5 / 3;}
 .fifteenth_item9{grid-area: 4 / 3 / 5 / 4;}
+.artwork_16{
+  grid-template-rows: 9.2fr 2fr 2.3fr 0.15fr;
+  grid-template-columns: 8.1fr 6.05fr 1.1fr;
+  gap: 12px;
+}
+.sixteen_item1{grid-area: 1 / 1 / 2 / 2;}
+.sixteen_item2{grid-area: 1 / 2 / 2 / 4;}
+.sixteen_item3{grid-area: 2 / 1 / 5 / 2;}
+.sixteen_item4{grid-area: 2 / 2 / 4 / 3;}
+.sixteen_item5{grid-area: 2 / 3 / 3 / 4;}
+.sixteen_item6{grid-area: 3 / 3 / 5 / 4;}
+.sixteen_item7{grid-area: 4 / 2 / 5 / 3}
