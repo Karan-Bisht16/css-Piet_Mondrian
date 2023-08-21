@@ -305,10 +305,22 @@
   grid-template-columns: 8.1fr 6.05fr 1.1fr;
   gap: 12px;
 }
-.sixteen_item1{grid-area: 1 / 1 / 2 / 2;}
-.sixteen_item2{grid-area: 1 / 2 / 2 / 4;}
-.sixteen_item3{grid-area: 2 / 1 / 5 / 2;}
-.sixteen_item4{grid-area: 2 / 2 / 4 / 3;}
-.sixteen_item5{grid-area: 2 / 3 / 3 / 4;}
-.sixteen_item6{grid-area: 3 / 3 / 5 / 4;}
-.sixteen_item7{grid-area: 4 / 2 / 5 / 3}
+.sixteenth_item1{grid-area: 1 / 1 / 2 / 2;}
+.sixteenth_item2{grid-area: 1 / 2 / 2 / 4;}
+.sixteenth_item3{grid-area: 2 / 1 / 5 / 2;}
+.sixteenth_item4{grid-area: 2 / 2 / 4 / 3;}
+.sixteenth_item5{grid-area: 2 / 3 / 3 / 4;}
+.sixteenth_item6{grid-area: 3 / 3 / 5 / 4;}
+.sixteenth_item7{grid-area: 4 / 2 / 5 / 3;}
+.artwork_17{
+  grid-template-rows: 5fr 6.4fr 2fr 2fr;
+  grid-template-columns: 3.6fr 11.4fr 0.8fr;
+  gap: 16px;
+}
+.seventeenth_item1{grid-area: 1 / 1 / 2 / 2;}
+.seventeenth_item2{grid-area: 1 / 2 / 3 / 4;}
+.seventeenth_item3{grid-area: 2 / 1 / 3 / 2;}
+.seventeenth_item4{grid-area: 3 / 1 / 5 / 2;}
+.seventeenth_item5{grid-area: 3 / 2 / 5 / 3;}
+.seventeenth_item6{grid-area: 3 / 3 / 4 / 4;}
+.seventeenth_item7{grid-area: 4 / 3 / 5 / 4;}
