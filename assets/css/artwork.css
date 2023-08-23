@@ -324,3 +324,15 @@
 .seventeenth_item5{grid-area: 3 / 2 / 5 / 3;}
 .seventeenth_item6{grid-area: 3 / 3 / 4 / 4;}
 .seventeenth_item7{grid-area: 4 / 3 / 5 / 4;}
+.artwork_18{
+  grid-template-rows: 11.2fr 3.3fr 2.95fr 0.3fr;
+  grid-template-columns: 8.2fr 8fr 2.2fr;
+  gap: 16px;
+}
+.eighteen_item1{grid-area: 1 / 1 / 2 / 2;}
+.eighteen_item2{grid-area: 1 / 2 / 2 / 4;}
+.eighteen_item3{grid-area: 2 / 1 / 5 / 2;}
+.eighteen_item4{grid-area: 2 / 2 / 4 / 3;}
+.eighteen_item5{grid-area: 2 / 3 / 3 / 4;}
+.eighteen_item6{grid-area: 3 / 3 / 5 / 4;}
+.eighteen_item7{grid-area: 4 / 2 / 5 / 3;}
