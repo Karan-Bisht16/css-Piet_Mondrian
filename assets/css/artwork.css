@@ -374,3 +374,19 @@
 .twenty_item3{grid-area: 1 / 3 / 2 / 4;}
 .twenty_item4{grid-area: 2 / 3 / 3 / 4;}
 .twenty_item5{grid-area: 3 / 3 / 4 / 4;}
+/*
+21. Composition III with Blue, Yellow and White, 1936
+*/
+.artwork_21{
+    grid-template-rows: 1.6fr 4.2fr 10.05fr 1.8fr;
+    grid-template-columns: 5.3fr 8.8fr;
+    width: 480px;
+    gap: 10px;
+}
+.twentyone_item1{grid-area: 1 / 1 / 2 / 2;}
+.twentyone_item2{grid-area: 1 / 2 / 2 / 3;}
+.twentyone_item3{grid-area: 2 / 1 / 3 / 2;}
+.twentyone_item4{grid-area: 2 / 2 / 3 / 3;}
+.twentyone_item5{grid-area: 3 / 1 / 4 / 2;}
+.twentyone_item6{grid-area: 3 / 2 / 5 / 3;}
+.twentyone_item7{grid-area: 4 / 1 / 5 / 2;}
