@@ -12,101 +12,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./assets/css/style_collections.css">
 
+    <link rel="stylesheet" href="./assets/css/style.css">
     <style>
-        *{
-            margin: 0;
-            background-color: #2B2730;
-        }
-        .peach{
-            background-color: #FF6666;
-            color: #FFFAF4;
-        }
-        header{
-            background-color: #FFEADD;
-            height: 20vh;
+        .main{
+            display: flex;
             width: 100%;
         }
-        .heading{
-            width: 70%;
-            height: 200px;
-            margin: 0 auto;
-            position: relative;
-            top: -15vh;
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+            gap: 12.5px;
+            justify-content: space-evenly;
+            padding-bottom: 50px;
         }
-        .heading > img{
-            width: 100%; 
-            height: inherit;
+        .sub_container{
+            height: 250px;
+            /* width: 250px; */
+        }
+        .sub_container:hover{
+            opacity: 80%;
+            cursor: pointer;
+        }
+        .sub_container>img{
+            /* width: inherit; */
+            height: 200px;
             object-fit: cover;
         }
-        .heading > h2 , .heading > p{
-            position: relative;
-            top: -200px;
-            margin-left: 15px;
-            background-color: transparent;
-        }
-        .heading > h2, .contact > h2{
-            color: #FFFAF4;
-            font-size: 60px;
-            font-family: 'Dancing Script', cursive;
-        }
-        .heading > p{
-            color: #FF6666;
-            font-size: 20px;
-            font-family: 'Roboto Condensed', sans-serif;
-        }
-        .navigation{
-            display: flex;
-            flex-flow: row wrap;
-            gap: 10px;
-            width: 100%;
-            height: 40px;
-            background-color: #2B273080;
-            position: absolute;
-            top:160px;
-            align-content: center;
-        }
-        .navigation > a{
-            text-decoration: none;
-            color: #FFFAF4; 
-            font-size: 17px;
-            font-family: 'Roboto Condensed', sans-serif;
-            padding: 4px 5px;
-            background-color: transparent;
-        }
-        .navigation > a:hover{
+        .selected{
+            width: 400px;
             background-color: #FF6666;
-            padding: 3px 5px;
-        }
-        footer{
-            background-color: #2B2730;
-            height: 30vh;
-            width: 100%;
-        }
-        footer > h3{
-            width: 100%;
-            height: 5px;
-            background-color: #FF6666;
-        }
-        .contact{
-            position: relative;
-            left: 10%;
-            width: 350px;
-            margin-top: 25px;
-        }
-        .contact > p{
-            color: #FF6666;
-            font-size: 20px;
-            font-family: 'Roboto Condensed', sans-serif;
-            text-align: start;
-        }
-        .links{
-            display: flex;
-            flex-flow: row wrap;
-            gap: 10px;
-            justify-content: flex-end;
         }
     </style>
 </head>
@@ -125,11 +60,52 @@
             <a href="./about_me.html">About me</a>
         </div>
     </div>
-    <div class="flex_centre">
-        <div class="main">
-        
+    <div class="main">
+        <div class="container">
+            <div class="sub_container">
+                <img src="./assets/artworks/1.jpg">
+                <p>Composition with Oval in Color Planes II</p>
+            </div>
+            <div class="sub_container">
+                <img src="./assets/artworks/2.jpg">
+                <p>Composition in Color A</p>
+            </div>
+            <div class="sub_container">
+                <img src="./assets/artworks/3.jpg">
+                <p>Composition with Gray and Light Brown</p>
+            </div>
+            <div class="sub_container">
+                <img src="./assets/artworks/4.jpg">
+                <p>Composition: Light Color Planes with Grey Contours</p>
+            </div>
+            <div class="sub_container">
+                <img src="./assets/artworks/5.jpg">
+                <p>Composition with Grid VII</p>
+            </div>
+            <div class="sub_container">
+                <img src="./assets/artworks/6.jpg">
+                <p>Composition with Grid IX</p>
+            </div>
+            <div class="sub_container">
+                <img src="./assets/artworks/7.jpg">
+                <p>Composition with Large Red Plane, Yellow, Black, Gray and Blue</p>
+            </div>
+            <div class="sub_container">
+                <img src="./assets/artworks/8.jpg">
+                <p>Tableau I</p>
+            </div>
+            <div class="sub_container">
+                <img src="./assets/artworks/9.jpg">
+                <p>Tableau 3 with Orange - Red, Yellow, Black, Blue and Gray</p>
+            </div>
+            <div class="sub_container">
+                <img src="./assets/artworks/10.jpg">
+                <p>Composition with Red, Yellow and Blue</p>
+            </div>
         </div>
-
+        <div class="selected hidden">
+            <p>yes</p>
+        </div>
     </div>
 
     <footer>
@@ -149,5 +125,22 @@
             </div>
         </div>
     </footer>
+    <script>
+        const container = document.querySelector('.container');
+        const selected = document.querySelector('.selected');
+        function displayThis(element){
+            console.log(element.childNodes[1]);
+            selected.innerHTML = element.childNodes;
+        }
+        var arrayOfContainers = document.querySelectorAll('.sub_container');
+
+        arrayOfContainers.forEach(sub_container =>{
+            sub_container.addEventListener('click', ()=>{
+                container.style.width = "65%";
+                displayThis(sub_container);
+                selected.classList.remove('hidden');
+            })
+        })
+    </script>
 </body>
 </html>
