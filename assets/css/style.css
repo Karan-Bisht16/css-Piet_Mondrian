@@ -58,6 +58,10 @@ header{
     background-color: #FF6666;
     padding: 3px 5px;
 }
+.hidden{
+    display: none;
+    pointer-events: none;
+}
 footer{
     background-color: #2B2730;
     height: 30vh;
