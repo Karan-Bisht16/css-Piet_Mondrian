@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piet Mondrian - Gallery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/artwork.css">
+
+    <style>
+        body {
+            background-color: #2B2730;
+        }
+
+        .flex_centre {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            gap: 40px;
+            width: 100%;
+            height: 600px;
+            align-items: center;
+            position: relative;
+            top: -100px;
+            margin: 0 auto 150px auto;
+        }
+
+        .carousel-inner {
+            width: 100%;
+            height: 670px;
+        }
+
+        .carousel-caption {
+            width: 100%;
+            position: absolute;
+            top: 590px;
+            left: 0px;
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            position: absolute;
+            top: 40vh;
+        }
+
+        .carousel-control-next {
+            right: 80px;
+        }
+
+        .carousel-control-prev {
+            left: 80px;
+        }
+
+
+        .carousel-caption>h6 {
+            background-color: transparent;
+            color: white;
+        }
+
+        .carousel-indicators {
+            width: 600px;
+            position: fixed;
+            margin: 0 auto;
+            background-color: #211d26;
+            padding: 0 15px;
+            border-radius: 7px;
+        }
+
+        .case>img {
+            height: 600px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 600px) {
+            .carousel {
+                width: 100%;
+            }
+
+            .flex_centre {
+                height: auto;
+                margin-bottom: 200px;
+                top: -150px;
+                gap: 0;
+            }
+
+            .carousel-indicators {
+                padding: 0;
+                width: 100%;
+            }
+
+            .carousel-inner {
+                height: auto;
+            }
+
+            .d-md-block {
+                display: block !important;
+            }
+
+            .carousel-caption {
+                position: static;
+                color: whitesmoke;
+                z-index: 1000000;
+            }
+
+            .carousel-caption>h6 {
+                padding: 0 5px 10px 5px;
+            }
+
+            .case {
+                gap: 5px;
+                width: 300px;
+                max-width: 400px !important;
+            }
+
+            .case>img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .carousel-control-next,
+            .carousel-control-prev {
+                top: 50vh;
+            }
+
+            .carousel-control-prev {
+                left: 20px;
+            }
+
+            .carousel-control-next {
+                right: 20px;
+            }
+
+            .artwork_1 {
+                height: 403px;
+            }
+
+            .artwork_2 {
+                height: 345.26px;
+            }
+
+            .artwork_3 {
+                height: 408.71px;
+                gap: 6px;
+            }
+
+            .artwork_6 {
+                height: 242px;
+            }
+
+            .artwork_8 {
+                height: 405.405px;
+            }
+
+            .artwork_9 {
+                height: 378px;
+            }
+
+            .artwork_11 {
+                height: 311.41px;
+            }
+
+            .artwork_20 {
+                width: 225px;
+                height: 481.5px;
+            }
+
+            .artwork_21 {
+                height: 375px;
+            }
+
+            .artwork_22 {
+                height: 322.53px;
+            }
+
+            .artwork_24 {
+                height: 329.251px;
+            }
+
+            .artwork_25 {
+                height: 464.53px;
+            }
+
+            .artwork_3,
+            .artwork_8,
+            .artwork_25 {
+                width: 250px;
+            }
+
+            .artwork_4,
+            .artwork_5,
+            .artwork_7,
+            .artwork_10,
+            .artwork_12,
+            .artwork_13,
+            .artwork_14,
+            .artwork_15,
+            .artwork_16,
+            .artwork_17,
+            .artwork_18,
+            .artwork_19,
+            .artwork_23 {
+                height: 300px;
+            }
+
+            .white_background {
+                top: -75px;
+                margin: 0 auto;
+                transform: scale(0.5) translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <div class="heading">
+        <img src="./assets/images/0.jpg" alt="">
+        <h2>Piet Mondrian</h2>
+        <p>- BY KARAN BISHT</p>
+        <div class="navigation">
+            <a href="./index.html" style="margin-left: 15px;">Home</a>
+            <a href="./biography.html">Biography</a>
+            <a href="./gallery.html" style="background-color: #FF6666;">Gallery</a>
+            <a href="./about_me.html">About me</a>
+            <a href="./sources.html">Sources</a>
+        </div>
+    </div>
+    <div class="flex_centre">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                    aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                    aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+                    aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10"
+                    aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11"
+                    aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12"
+                    aria-label="Slide 13"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13"
+                    aria-label="Slide 14"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14"
+                    aria-label="Slide 15"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15"
+                    aria-label="Slide 16"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="16"
+                    aria-label="Slide 17"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="17"
+                    aria-label="Slide 18"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="18"
+                    aria-label="Slide 19"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="19"
+                    aria-label="Slide 20"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="20"
+                    aria-label="Slide 21"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="21"
+                    aria-label="Slide 22"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="22"
+                    aria-label="Slide 23"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="23"
+                    aria-label="Slide 24"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="24"
+                    aria-label="Slide 25"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="artwork_1 case">
+                        <img src="./assets/images/artworks/1 [1914].jpg">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>1. Composition with Oval in Color Planes II, 1914</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_2 case">
+                        <img src="./assets/images/artworks/2 [1917].jpg">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>2. Composition in Color A, 1917</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_3 case">
+                        <div class="dark_yellow third_item1"></div>
+                        <div class="dark_yellow third_item2"></div>
+                        <div class="dark_yellow third_item3"></div>
+                        <div class="silver third_item4"></div>
+                        <div class="dark_yellow third_item5"></div>
+                        <div class="silver third_item6"></div>
+                        <div class="silver third_item7"></div>
+                        <div class="silver third_item8"></div>
+                        <div class="dark_yellow third_item9"></div>
+                        <div class="silver third_item10"></div>
+                        <div class="silver third_item11"></div>
+                        <div class="dark_yellow third_item12"></div>
+                        <div class="dark_yellow third_item13"></div>
+                        <div class="yellowish_gray third_item14"></div>
+                        <div class="dark_yellow third_item15"></div>
+                        <div class="silver third_item16"></div>
+                        <div class="silver third_item17"></div>
+                        <div class="yellowish_gray third_item18"></div>
+                        <div class="silver third_item19"></div>
+                        <div class="silver third_item20"></div>
+                        <div class="silver third_item21"></div>
+                        <div class="silver third_item22"></div>
+                        <div class="dark_yellow third_item23"></div>
+                        <div class="silver third_item24"></div>
+                        <div class="silver third_item25"></div>
+                        <div class="silver third_item26"></div>
+                        <div class="yellowish_gray third_item27"></div>
+                        <div class="dark_yellow third_item28"></div>
+                        <div class="dark_yellow third_item29"></div>
+                        <div class="dark_yellow third_item30"></div>
+                        <div class="yellowish_gray third_item31"></div>
+                        <div class="dark_yellow third_item32"></div>
+                        <div class="silver third_item33"></div>
+                        <div class="dark_yellow third_item34"></div>
+                        <div class="dark_yellow third_item35"></div>
+                        <div class="silver third_item36"></div>
+                        <div class="silver third_item37"></div>
+                        <div class="silver third_item38"></div>
+                        <div class="dark_yellow third_item39"></div>
+                        <div class="silver third_item40"></div>
+                        <div class="silver third_item41"></div>
+                        <div class="silver third_item42"></div>
+                        <div class="silver third_item43"></div>
+                        <div class="dark_yellow third_item44"></div>
+                        <div class="silver third_item45"></div>
+                        <div class="silver third_item46"></div>
+                        <div class="yellowish_gray third_item47"></div>
+                        <div class="silver third_item48"></div>
+                        <div class="silver third_item49"></div>
+                        <div class="silver third_item50"></div>
+                        <div class="silver third_item51"></div>
+                        <div class="dark_yellow third_item52"></div>
+                        <div class="dark_yellow third_item53"></div>
+                        <div class="silver third_item54"></div>
+                        <div class="silver third_item55"></div>
+                        <div class="silver third_item56"></div>
+                        <div class="dark_yellow third_item57"></div>
+                        <div class="dark_yellow third_item58"></div>
+                        <div class="silver third_item59"></div>
+                        <div class="silver third_item60"></div>
+                        <div class="silver third_item61"></div>
+                        <div class="silver third_item62"></div>
+                        <div class="silver third_item63"></div>
+                        <div class="silver third_item64"></div>
+                        <div class="silver third_item65"></div>
+                        <div class="dark_yellow third_item66"></div>
+                        <div class="silver third_item67"></div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>3. Composition with Gray and Light Brown, 1918</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_4 case">
+                        <img src="./assets/images/artworks/4 [1919].jpg">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>4. Composition: Light Color Planes with Grey Contours, 1919</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_5 case">
+                        <img src="./assets/images/artworks/5 [1919].jpg">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>5. Composition with Grid VII, 1919</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_6 case">
+                        <img src="./assets/images/artworks/6 [1919].jpg">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>6. Composition with Grid IX, 1919</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_7 case">
+                        <div class="white seventh_item1"></div>
+                        <div class="white seventh_item2"></div>
+                        <div class="yellow seventh_item3"></div>
+                        <div class="white seventh_item4"></div>
+                        <div class="white seventh_item5"></div>
+                        <div class="red seventh_item6"></div>
+                        <div class="yellow seventh_item7"></div>
+                        <div class="white seventh_item8"></div>
+                        <div class="white seventh_item9"></div>
+                        <div class="white seventh_item10"></div>
+                        <div class="gray seventh_item11"></div>
+                        <div class="white seventh_item12"></div>
+                        <div class="white seventh_item13"></div>
+                        <div class="yellow seventh_item14"></div>
+                        <div class="white seventh_item15"></div>
+                        <div class="blue seventh_item16"></div>
+                        <div class="red seventh_item17"></div>
+                        <div class="white seventh_item18"></div>
+                        <div class="gray seventh_item19"></div>
+                        <div class="white seventh_item20"></div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>7. Composition with Large Red Plane, Yellow, Black, Gray and Blue, 1921</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_8 case">
+                        <div class="black eighth_item1"></div>
+                        <div class="red eighth_item2"></div>
+                        <div class="white eighth_item3"></div>
+                        <div class="white eighth_item4"></div>
+                        <div class="white eighth_item5"></div>
+                        <div class="black eighth_item6"></div>
+                        <div class="white eighth_item7"></div>
+                        <div class="white eighth_item8"></div>
+                        <div class="yellow eighth_item9"></div>
+                        <div class="white eighth_item10"></div>
+                        <div class="blue eighth_item11"></div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>8. Tableau I, 1921</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_9 case">
+                        <div class="orange nineth_artwork1"></div>
+                        <div class="white nineth_artwork2"></div>
+                        <div class="yellow nineth_artwork3"></div>
+                        <div class="orange nineth_artwork4"></div>
+                        <div class="cream nineth_artwork5"></div>
+                        <div class="cream nineth_artwork6"></div>
+                        <div class="white nineth_artwork7"></div>
+                        <div class="black nineth_artwork8"></div>
+                        <div class="cream nineth_artwork9"></div>
+                        <div class="blue nineth_artwork10"></div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>9. Tableau 3 with Orange - Red, Yellow, Black, Blue and Gray, 1921</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_10 case">
+                        <div class="yellow tenth_item1"></div>
+                        <div class="white tenth_item2"></div>
+                        <div class="gray tenth_item3"></div>
+                        <div class="blue tenth_item4"></div>
+                        <div class="white tenth_item5"></div>
+                        <div class="white tenth_item6"></div>
+                        <div class="red tenth_item7"></div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>10. Composition with Red, Yellow and Blue, 1922</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_11 case">
+                        <div class="white eleventh_item1"></div>
+                        <div class="yellow eleventh_item2"></div>
+                        <div class="black eleventh_item3"></div>
+                        <div class="white eleventh_item4"></div>
+                        <div class="white eleventh_item5"></div>
+                        <div class="white eleventh_item6"></div>
+                        <div class="blue eleventh_item7"></div>
+                        <div class="white eleventh_item8"></div>
+                        <div class="red eleventh_item9"></div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>11. Composition 2, 1922</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_12 case">
+                        <div class="black twelveth_item1"></div>
+                        <div class="ash twelveth_item2"></div>
+                        <div class="white twelveth_item3"></div>
+                        <div class="ash twelveth_item4"></div>
+                        <div class="yellow twelveth_item5"></div>
+                        <div class="red twelveth_item6"></div>
+                        <div class="white twelveth_item7"></div>
+                        <div class="yellow twelveth_item8"></div>
+                        <div class="blue twelveth_item9"></div>
+                        <div class="white twelveth_item10"></div>
+                        <div class="blue twelveth_item11"></div>
+                        <div class="yellow twelveth_item12"></div>
+                        <div class="ash twelveth_item13"></div>
+                        <div class="red twelveth_item14"></div>
+                        <div class="white twelveth_item15"></div>
+                        <div class="black twelveth_item16"></div>
+                        <div class="white twelveth_item17"></div>
+                        <div class="black twelveth_item18"></div>
+                        <div class="ash twelveth_item19"></div>
+                        <div class="red twelveth_item20"></div>
+                        <div class="white twelveth_item21"></div>
+                        <div class="blue twelveth_item22"></div>
+                        <div class="yellow twelveth_item23"></div>
+                        <div class="white twelveth_item24"></div>
+                        <div class="white twelveth_item25"></div>
+                        <div class="black twelveth_item26"></div>
+                        <div class="ash twelveth_item27"></div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>12. Composition A, 1923</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_13 case">
+                        <div class="magenta thirteen_item1"></div>
+                        <div class="ash thirteen_item2"></div>
+                        <div class="ash thirteen_item3"></div>
+                        <div class="ash thirteen_item4"></div>
+                        <div class="ash thirteen_item5" style="margin-right: 8px;"></div>
+                        <div class="ash thirteen_item6" style="margin: 6px 0"></div>
+                        <div class="ash thirteen_item7"></div>
+                        <div class="violet thirteen_item8"></div>
+                        <div class="yellow thirteen_item9"></div>
+                        <div class="white_background">
+                            <div class="white triangle thirteen_item10"></div>
+                            <div class="white triangle thirteen_item11"></div>
+                            <div class="white triangle thirteen_item12"></div>
+                            <div class="white triangle thirteen_item13"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>13. Lozenge Composition with Red, Gray, Blue, Yellow, and Black, 1925</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_14 case">
+                        <div class="red fourteen_item1" style="margin-bottom: 5px;"></div>
+                        <div class="red fourteen_item2" style="margin-bottom: 5px;"></div>
+                        <div class="black fourteen_item3"></div>
+                        <div class="white fourteen_item4"></div>
+                        <div class="white fourteen_item5"></div>
+                        <div class="white fourteen_item6" style="margin-left: 6px;"></div>
+                        <div class="white fourteen_item7"></div>
+                        <div class="blue fourteen_item8"></div>
+                        <div class="pale fourteen_item9" style="margin-top: 5px;"></div>
+                        <div class="white_background">
+                            <div class="white triangle thirteen_item10"></div>
+                            <div class="white triangle thirteen_item11"></div>
+                            <div class="white triangle thirteen_item12"></div>
+                            <div class="white triangle thirteen_item13"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>14. Lozenge Composition with Red, Black,Blue and Yellow, 1925</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_15 case">
+                        <div class="red fifteenth_item1"></div>
+                        <div class="white fifteenth_item2"></div>
+                        <div class="white fifteenth_item3"></div>
+                        <div class="white fifteenth_item4"></div>
+                        <div class="blue fifteenth_item5"></div>
+                        <div class="white fifteenth_item6"></div>
+                        <div class="yellow fifteenth_item7"></div>
+                        <div class="yellow fifteenth_item8"></div>
+                        <div class="gray fifteenth_item9"></div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>15. Composition No. III, with Red, Blue, Yellow, and Black, 1929</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_16 case">
+                        <div class="white sixteenth_item1"></div>
+                        <div class="white sixteenth_item2"></div>
+                        <div class="white sixteenth_item3"></div>
+                        <div class="white sixteenth_item4"></div>
+                        <div class="yellow sixteenth_item5" style="margin-bottom: 15px;"></div>
+                        <div class="white sixteenth_item6"></div>
+                        <div class="white sixteenth_item7"></div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>16. Composition with yellow patch, 1930</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_17 case">
+                        <div class="white seventeenth_item1" style="margin-bottom: 15px;"></div>
+                        <div class="red seventeenth_item2"></div>
+                        <div class="white seventeenth_item3"></div>
+                        <div class="sky_blue seventeenth_item4"></div>
+                        <div class="white seventeenth_item5"></div>
+                        <div class="white seventeenth_item6"></div>
+                        <div class="yellow seventeenth_item7"></div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>17. Composition with Red, Blue and Yellow, 1930</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_18 case">
+                        <div class="white eighteen_item1"></div>
+                        <div class="white eighteen_item2"></div>
+                        <div class="red eighteen_item3"></div>
+                        <div class="white eighteen_item4"></div>
+                        <div class="marine eighteen_item5" style="margin-bottom: 15px;"></div>
+                        <div class="white eighteen_item6"></div>
+                        <div class="white eighteen_item7"></div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>18. Composition N. 1 with Red and Blue, 1931</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_19 case">
+                        <div class="red nineteen_item1"></div>
+                        <div class="white nineteen_item2"></div>
+                        <div class="white nineteen_item3"></div>
+                        <div class="white nineteen_item4"></div>
+                        <div class="yellow nineteen_item5"></div>
+                        <div class="white nineteen_item6"></div>
+                        <div class="blue nineteen_item7"></div>
+                        <div class="white nineteen_item8"></div>
+                        <div class="white nineteen_item9"></div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>19. Composition C (No.III) with Red, Yellow and Blue, 1935</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_20 case">
+                        <div class="white twenty_item1"></div>
+                        <div class="white twenty_item2"></div>
+                        <div class="blue twenty_item3"></div>
+                        <div class="white twenty_item4"></div>
+                        <div class="white twenty_item5"></div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>20. Vertical Composition with Blue and White, 1936</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_21 case">
+                        <div class="royal twentyone_item1"></div>
+                        <div class="white twentyone_item2"></div>
+                        <div class="white twentyone_item3"></div>
+                        <div class="white twentyone_item4"></div>
+                        <div class="white twentyone_item5"></div>
+                        <div class="white twentyone_item6"></div>
+                        <div class="tangerine twentyone_item7"></div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>21. Composition III with Blue, Yellow and White, 1936</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_22 case">
+                        <img src="./assets/images/artworks/22 [1937].jpg">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>22. Composition with Grid IX, 1919</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_23 case">
+                        <img src="./assets/images/artworks/23 [1938].jpg">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>23. PICTURE NO. III, 1938</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_24 case">
+                        <img src="./assets/images/artworks/24 [1942].jpg">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>24. Composition No.10, 1942</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="artwork_25 case">
+                        <img src="./assets/images/artworks/25 [1942].jpg">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>25. Composition No. III Blanc-Jaune, 1942</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    <footer>
+        <h3></h3>
+        <div class="contact">
+            <h2>Piet Mondrian</h2>
+            <p>- BY KARAN BISHT</p>
+            <div class="links">
+                <a href="https://instagram.com/karan_b1603" target="_blank">
+                    <img src="./assets/images/instagram.png" width="25px"></a>
+                <a href="https://twitter.com/karan_b1603" target="_blank">
+                    <img src="./assets/images/twitter.png" width="25px"></a>
+                <a href="https://github.com/Karan-Bisht16" target="_blank">
+                    <img src="./assets/images/github.png" width="25px"></a>
+                <a href="https://www.linkedin.com/in/karan-bisht-583918254/" target="_blank">
+                    <img src="./assets/images/linkedin.png" width="25px"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

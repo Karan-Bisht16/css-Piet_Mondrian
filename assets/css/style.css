@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    background-color: #2B2730;
+}
+
+header {
+    background-color: #FFEADD;
+    height: 20vh;
+    width: 100%;
+}
+
+.heading {
+    width: 70%;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    top: -15vh;
+}
+
+.heading>img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+.heading>h2,
+.heading>p {
+    position: relative;
+    top: -200px;
+    margin-left: 15px;
+    background-color: transparent;
+}
+
+.heading>h2,
+.contact>h2 {
+    color: #FFFAF4;
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.heading>p {
+    color: #FF6666;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: #2B273080;
+    position: absolute;
+    top: 160px;
+    align-content: center;
+}
+
+.navigation>a {
+    text-decoration: none;
+    color: #FFFAF4;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 4px 5px;
+    background-color: transparent;
+}
+
+.navigation>a:hover {
+    background-color: #FF6666;
+    padding: 3px 5px;
+}
+
+.hidden {
+    display: none;
+    pointer-events: none;
+}
+
+footer {
+    background-color: #2B2730;
+    height: 30vh;
+    width: 100%;
+}
+
+footer>h3 {
+    width: 100%;
+    height: 5px;
+    background-color: #FF6666;
+}
+
+.contact {
+    position: relative;
+    left: 10%;
+    width: 350px;
+    margin-top: 25px;
+}
+
+.contact>p {
+    color: #FF6666;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: start;
+}
+
+.links {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.flex_centre {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 40px;
+    width: 80%;
+    margin: 0 auto 150px auto;
+}
+
+.peach {
+    background-color: #FF6666;
+    color: #FFFAF4;
+}
+
+.white {
+    background-color: #F0F1EC;
+}
+
+.red {
+    background-color: #E72F24;
+}
+
+.yellow {
+    background-color: #F9D01E
+}
+
+.gray {
+    background-color: #232629
+}
+
+.blue {
+    background-color: #004592
+}
+
+.dark_yellow {
+    background-color: #c99004;
+}
+
+.yellowish_gray {
+    background-color: #9f9d77;
+}
+
+.silver {
+    background-color: #b7bacd;
+}
+
+.black {
+    background-color: black;
+}
+
+.orange {
+    background-color: #e8561c;
+}
+
+.cream {
+    background-color: #f5e9bf;
+}
+
+.ash {
+    background-color: #d4dae1;
+}
+
+.violet {
+    background-color: #4b3c7d;
+}
+
+.magenta {
+    background-color: #d80638;
+}
+
+.pale {
+    background-color: #eadd76;
+}
+
+.sky_blue {
+    background-color: #4998c2;
+}
+
+.marine {
+    background-color: #043654;
+}
+
+.royal {
+    background-color: #0d2289;
+}
+
+.tangerine {
+    background-color: #fcc803;
+}
+
+@media (max-width: 600px) {
+    .heading {
+        width: 90%;
+    }
+
+    .heading>h2,
+    .contact>h2 {
+        font-size: 40px;
+    }
+
+    .heading>p {
+        font-size: 16px;
+        float: right;
+        margin: 0 15px 0 0;
+        /* font-weight: bold; */
+        /* text-shadow: -1px -1px 0 #d28181, 1px -1px 0 #d28181, -1px 1px 0 #d28181, 1px 1px 0 #d28181; */
+    }
+
+    a[href="./index.html"] {
+        margin-left: 0px !important;
+    }
+
+    .navigation>a[href="./biography.html"] {
+        display: none;
+    }
+
+    .navigation {
+        gap: 7.5px;
+        justify-content: center;
+    }
+
+    .contact {
+        width: auto;
+        position: static;
+        padding-left: 10px;
+    }
+
+    .contact>* {
+        width: 80%;
+    }
+
+    .flex_centre {
+        /* flex-flow: row nowrap; */
+        /* flex-direction: row; */
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        /* margin-bottom: 50px; */
+        position: relative;
+        top: -135px;
+        /* padding: 0 10px; */
+        /* gap: 100px; */
+    }
+
+    .main {
+        display: flex !important;
+        gap: 0px;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .main>.text {
+        width: 100%;
+        /* padding: 0 10px; */
+    }
+
+    .main>img {
+        /* max-width: 100%; */
+        width: 200px !important;
+    }
+
+    .button_biography {
+        position: relative;
+        top: 50px;
+    }
+}
