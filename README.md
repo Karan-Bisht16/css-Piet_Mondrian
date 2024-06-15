@@ -1,4 +1,4 @@
-# js-Dicee_Game
+# css-Piet_Mondrian
 
 A simple website made only using HTML, CSS and Bootstrap, focusing on [**Piet Mondrian**](https://en.wikipedia.org/wiki/Piet_Mondrian). 
 This project implements his neoplastic artworks using the CSS grid layout to showcase and pay homage to his distinctive style. 
